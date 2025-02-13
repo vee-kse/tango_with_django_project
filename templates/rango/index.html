@@ -23,7 +23,7 @@
             <ul>
                 {% for category in most_liked_categories %}
                 <li>
-                    <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a> ({{ category.likes }} likes)
+                    <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -51,12 +51,12 @@
 
     <!-- Top 5 Most Viewed Pages -->
     <div>
-        <h2>Top 5 Most Viewed Pages</h2>
+        <h2>Most Viewed Pages</h2>
         {% if top_pages %}
             <ul>
                 {% for page in top_pages %}
                 <li>
-                    <a href="{{ page.url }}">{{ page.title }}</a> ({{ page.views }} views)
+                    <a href="{{ page.url }}">{{ page.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
