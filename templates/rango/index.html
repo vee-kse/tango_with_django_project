@@ -32,23 +32,6 @@
         {% endif %}
     </div>
 
-    <!-- Regular Category List -->
-    <div>
-        <h2>Categories</h2>
-        {% if categories %}
-            <ul>
-                {% for category in categories %}
-                <li>
-                    <!-- The following line is changed to add an HTML hyperlink -->
-                    <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <strong>There are no categories present.</strong>
-        {% endif %}
-    </div>
-
     <!-- Top 5 Most Viewed Pages -->
     <div>
         <h2>Most Viewed Pages</h2>
