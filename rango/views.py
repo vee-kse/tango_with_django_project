@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from rango.models import Category, Page
 from rango.forms import CategoryForm
 from rango.forms import PageForm
+from django.urls import reverse
 
 def index(request):
         # Query the database for a list of ALL categories currently stored.
